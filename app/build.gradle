@@ -1,0 +1,13 @@
+apply from: "$rootDir/gradle/application.gradle"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    implementation "androidx.core:core-ktx:$androidxCoreKtxVersion"
+    implementation "androidx.appcompat:appcompat:$appCompatVersion"
+
+    implementation project(':base')
+    implementation project(':feature-one')
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycleExtensionsVersion"
+}

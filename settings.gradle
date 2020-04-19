@@ -1,0 +1,6 @@
+rootProject.name='Base'
+include ':app'
+include ':base'
+include ':networking'
+include ':data'
+include ':feature-one'
